@@ -1,59 +1,48 @@
-# 📚 AI Notes & Quiz Generator
+# Brain-Bot — AI Study Assistant
 
-> Transform long study material into concise notes and revision questions using AI.
->
-> demo link : https://brain-bot-erdznkqpacpj5chk84xxuv.streamlit.app/
+> Transform study material into concise notes, revision questions, and an interactive AI learning experience.
 
-<div align="center">
+## Live Demo
 
-🚀 **Powered by LangChain + Hugging Face + Streamlit**
+[Try Brain-Bot](https://brain-bot-erdznkqpacpj5chk84xxuv.streamlit.app/)
 
-📝 Smart Notes &nbsp;&nbsp; • &nbsp;&nbsp;
-🧠 Automatic Quiz &nbsp;&nbsp; • &nbsp;&nbsp;
-⚡ Parallel Chains
+## About Brain-Bot
 
-</div>
+Brain-Bot is an AI-powered study assistant built to help students learn from their study material more efficiently.
 
----
+It takes educational content and uses AI to generate concise study notes, revision questions with answers, and an interactive chat experience where users can ask questions about the material.
 
-## ✨ What is this?
+The project focuses on combining Large Language Models with a simple and accessible Streamlit interface to create a practical AI learning tool.
 
-**AI Notes & Quiz Generator** is an AI-powered study assistant that converts
-long educational content into:
+## Features
 
-- 📝 Short and simple study notes
-- 🧠 5 revision questions with answers
-- 📚 A combined study document
-- ⬇️ Downloadable study material
+- Generate concise study notes from study material
+- Generate revision questions and answers
+- Ask questions about the study material
+- Interactive AI study chat
+- Conversation context for follow-up questions
+- Generate a combined study document
+- Download generated study material
+- Support for PDF-based study material
 
-The project demonstrates how **LangChain RunnableParallel** can execute
-multiple independent chains using the same input.
-
----
-
-## ⚡ How It Works
+## How It Works
 
 ```text
-                     ┌───────────────┐
-                     │               │
-                     │  Notes Chain  │
-                     │               │
-                     └───────┬───────┘
-                             │
-                             ▼
-Input Text ───────────────► RunnableParallel
-                             ▲
-                             │
-                     ┌───────┴───────┐
-                     │               │
-                     │   Quiz Chain  │
-                     │               │
-                     └───────────────┘
-                             │
-                             ▼
-                     ┌───────────────┐
-                     │  Merge Chain  │
-                     └───────┬───────┘
-                             │
-                             ▼
-                  📚 Final Study Material
+Study Material
+      |
+      v
+   Brain-Bot
+      |
+      +----------------+
+      |                |
+      v                v
+   Notes             Quiz
+      |                |
+      +--------+-------+
+               |
+               v
+          Study Pack
+
+               |
+               v
+          AI Study Chat
