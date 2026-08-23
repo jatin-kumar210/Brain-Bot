@@ -1,6 +1,8 @@
 # 📚 AI Notes & Quiz Generator
 
 > Transform long study material into concise notes and revision questions using AI.
+>
+> demo link : https://brain-bot-erdznkqpacpj5chk84xxuv.streamlit.app/
 
 <div align="center">
 
